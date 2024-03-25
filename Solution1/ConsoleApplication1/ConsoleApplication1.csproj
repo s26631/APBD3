@@ -13,6 +13,7 @@
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,6 +43,14 @@
     <ItemGroup>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Properties\Container.cs" />
+        <Compile Include="Properties\ContainerShip.cs" />
+        <Compile Include="Properties\GasContainer.cs" />
+        <Compile Include="Properties\IHazardNotifier.cs" />
+        <Compile Include="Properties\LiquidContainer.cs" />
+        <Compile Include="Properties\OverfillException.cs" />
+        <Compile Include="Properties\IContainer.cs" />
+        <Compile Include="Properties\RefrigeratedContainer.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
